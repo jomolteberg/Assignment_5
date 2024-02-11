@@ -24,7 +24,7 @@ public class Desk : Product, IAssemblable, IOffice
         return "A sturdy and spacious desk, designed for both functionality and style. Perfect for any home office or study area.";
     }
     
-    public string Assemble()
+    string IAssemblable.Assemble()
     {
         return "Assembly instructions: Start by assembling the desk frame, attach the legs securely, then align and fix the desktop to the frame. Ensure all screws are tightened for stability.";
     }

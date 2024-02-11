@@ -24,7 +24,7 @@ public class ChildBunkBed : Product, IAssemblable, IBedroom
         return "A fun and space-saving bunk bed perfect for children's bedrooms. Designed with safety and comfort in mind, it offers a cozy sleep space while maximizing room for play.";
     }
     
-    public string Assemble()
+    string IAssemblable.Assemble()
     {
         return "Assembly instructions: Begin with the lower bed frame, ensuring all support slats are securely in place. Stack the upper frame and secure it with safety rails. Attach the ladder firmly for easy access.";
     }

@@ -24,7 +24,7 @@ public class Bookshelf : Product, IAssemblable, IOffice, ILivingRoom
         return "A versatile and elegant bookshelf, perfect for organizing books, displaying decorations, or housing collections. Its sleek design fits seamlessly into any living room or office space.";
     }
     
-    public string Assemble()
+    string IAssemblable.Assemble()
     {
         return "Assembly instructions: Begin with the sides, inserting shelves at the desired heights. Secure the back panel, then anchor to a wall for stability. Follow the manual for detailed steps.";
     }

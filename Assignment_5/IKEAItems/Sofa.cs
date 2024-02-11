@@ -23,7 +23,7 @@ public class Sofa: Product, IAssemblable, ILivingRoom
         return "A comfortable and stylish sofa, perfect for any living room.";
     }
     
-    public string Assemble()
+    string IAssemblable.Assemble()
     {
         return "Assembly instructions: Connect frame pieces, attach legs, then place cushions.";
     }
